@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="./js/app.js"></script>
+  </head>
+  <body>
+    <h2>Snackbar / Toast</h2>
+    <p>
+      Snackbars are often used as a tooltips/popups to show a message at the
+      bottom of the screen.
+    </p>
+    <p>
+      Click on the button to show the snackbar. It will disappear after 3
+      seconds.
+    </p>
+
+    <button class="snackButton" data-snack-bar="1" data-snack="click">
+      Show Snackbar 1
+    </button>
+
+    <div class="snackbar" data-snack-txt="1" data-snack-transition="3000">
+      Snack Bar 1 message..
+
+      <span data-snack-close>&#x2715;</span>
+    </div>
+
+    <button class="snackButton" data-snack-bar="2" data-snack="mouseover">
+      Show Snackbar 2
+    </button>
+
+    <div class="snackbar" data-snack-txt="2" data-snack-transition="1000">
+      Snack Bar 2 message..
+
+      <span data-snack-close>&#x2715;</span>
+    </div>
+
+    <script>
+      snackBarInit();
+    </script>
+  </body>
+</html>
